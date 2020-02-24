@@ -12,7 +12,6 @@ public class JsonUtil {
         String jsonStr = null;
         try {
              jsonStr = objectMapper.writeValueAsString(object);
-             throw new ValueReadException("Read value error");
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
